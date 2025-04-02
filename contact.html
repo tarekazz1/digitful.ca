@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Pure Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Particles.js container for background effect -->
+  <div id="particles-js"></div>
+
+  <header class="contact-hero">
+    <a href="index.html" class="small-logo">
+      <img src="images/logo-small.png" alt="Company Logo" />
+    </a>
+    <h1>Let’s make this make sense!</h1>
+  </header>
+  
+  <section class="contact-form-section">
+    <form id="contact-form" action="thank-you.html" method="POST">
+      <fieldset>
+        <legend>What do you need help with?</legend>
+        <small style="color: #aaa;">(Pick one or more)</small>
+        <div class="toggle-buttons">
+          <button type="button" class="toggle-btn" data-value="social-media">Social Media</button>
+          <button type="button" class="toggle-btn" data-value="seo">SEO</button>
+          <button type="button" class="toggle-btn" data-value="paid-ads">Paid Ads</button>
+          <button type="button" class="toggle-btn" data-value="automation">Automation</button>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>What are you trying to improve?</legend>
+        <small style="color: #aaa;">(Select anything that applies)</small>
+        <div class="toggle-buttons">
+          <button type="button" class="toggle-btn" data-value="awareness">More Visibility</button>
+          <button type="button" class="toggle-btn" data-value="leads">Better Leads</button>
+          <button type="button" class="toggle-btn" data-value="conversion">More Conversions</button>
+          <button type="button" class="toggle-btn" data-value="workflow">Less Manual Work</button>
+          <button type="button" class="toggle-btn" data-value="scaling">Easier Scaling</button>
+        </div>
+      </fieldset>      
+      
+      <div class="form-group">
+        <label for="details">Not sure what you need? That’s okay.</label>
+        <textarea id="details" name="details" rows="4" placeholder="Tell us what’s going on. We’ll take it from there."></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" />
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      
+      <div class="form-group checkbox-group">
+        <label>
+          <input type="checkbox" name="updates" />
+          Send me occasional updates—no spam.
+        </label>
+      </div>      
+      
+      <p class="privacy-note">We’ll never share your info. No spam. No shady stuff.</p>
+    
+      <button type="submit" class="cta-button">Let’s Talk</button>
+    
+      <p id="form-confirmation" style="display: none; font-size: 1rem; color: #0f0; margin-top: 20px;">
+        Thanks for reaching out. We’ll get back to you within 1–2 business days.
+      </p>
+    </form>    
+  </section>
+  
+  <footer>
+    <p>Contact us: info@example.com | +1 234 567 890</p>
+  </footer>
+  
+  <!-- Include the JavaScript files -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
