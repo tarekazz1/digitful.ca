@@ -21,18 +21,34 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Toggle Button Functionality for Contact Form - FIXED FOR MOBILE
   const toggleButtons = document.querySelectorAll('.toggle-btn');
+  const helpWithInput = document.getElementById('help_with');
+  const goalsInput = document.getElementById('goals');
+  
   toggleButtons.forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       this.classList.toggle('selected');
+  
       // Force repaint by briefly toggling the animation
       this.style.animation = 'none';
       requestAnimationFrame(() => {
         this.style.animation = '';
       });
-      this.blur(); // optional, removes lingering focus state
-    });    
-  });
+      this.blur();
   
+      // Get parent fieldset legend
+      const parentLegend = this.closest('fieldset').querySelector('legend').textContent.toLowerCase();
+  
+      const selectedValues = [...this.closest('.toggle-buttons').querySelectorAll('.toggle-btn.selected')]
+        .map(btn => btn.dataset.value)
+        .join(', ');
+  
+      if (parentLegend.includes('help')) {
+        helpWithInput.value = selectedValues;
+      } else if (parentLegend.includes('improve')) {
+        goalsInput.value = selectedValues;
+      }
+    });
+  });  
   // Automatically toggle the button based on the URL parameter
   const urlParams = new URLSearchParams(window.location.search);
   const serviceParam = urlParams.get('service');
