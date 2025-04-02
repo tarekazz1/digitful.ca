@@ -41,6 +41,30 @@ document.addEventListener('DOMContentLoaded', function() {
     if (targetButton) {
       targetButton.classList.add('selected');
     }
+    // Store selected toggle values into hidden inputs
+    const helpWithInput = document.getElementById('help_with');
+    const goalsInput = document.getElementById('goals');
+
+    const fieldsets = document.querySelectorAll('fieldset');
+
+    fieldsets.forEach(fieldset => {
+      const legend = fieldset.querySelector('legend');
+      const toggleBtns = fieldset.querySelectorAll('.toggle-btn');
+
+      toggleBtns.forEach(button => {
+        button.addEventListener('click', () => {
+          const selectedValues = [...fieldset.querySelectorAll('.toggle-btn.selected')]
+            .map(btn => btn.dataset.value)
+            .join(', ');
+
+          if (legend.textContent.toLowerCase().includes('help')) {
+            helpWithInput.value = selectedValues;
+          } else if (legend.textContent.toLowerCase().includes('improve')) {
+            goalsInput.value = selectedValues;
+          }
+        });
+      });
+    });
   }
 
   // Initialize Particles.js if available and if reduced motion is not preferred
