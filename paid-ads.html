@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Paid Ads - Pure Marketing</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reach real buyers with Digitful's Paid Ads services." />
+  <link rel="canonical" href="https://digitful.ca/paid-ads.html" />
+  <title>Paid Ads - Digitful</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <!-- Google Material Symbols -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -15,53 +17,80 @@
   <!-- Particles.js container for background effect -->
   <div id="particles-js"></div>
 
-  <header class="service-header">
-    <nav class="main-nav">
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a href="index.html" class="small-logo">
-      <img src="images/logo-small.webp" alt="Company Logo" />
-    </a>
-    <div class="overlay-container">
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo-small.webp" alt="Digitful Logo" />
+      </a>
+      <nav class="main-nav" role="navigation">
+      </nav>
+
+<button class="hamburger" aria-label="Toggle menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<nav class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="social-media.html">Social Media</a></li>
+    <li><a href="seo.html">SEO</a></li>
+    <li><a href="paid-ads.html">Paid Ads</a></li>
+    <li><a href="automation.html">Automation</a></li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="service-hero">
       <h1>
-        <span class="material-symbols-outlined ads-icon large-icon">paid</span>
+        <span class="material-symbols-outlined ads-icon large-icon">ads_click</span>
         Paid Ads
       </h1>
       <p>Reach the Right People, Instantly.</p>
+    </section>
+
+    <!-- Additional Paid Ads content can go here -->
+    <section class="paid-ads-info">
+      <h2>You've run ads. You're still not sure what they're doing.</h2>
+      <ul>
+        <li>Clicks are up. Conversions? Not so much.</li>
+        <li>Your leads are random—or totally unqualified.</li>
+        <li>You're spending more, but not seeing results.</li>
+      </ul>
+
+      <p><em>We get it. Most ads are just expensive noise.</em></p>
+
+      <p>We build campaigns that target real buyers, not just clickers. Clear messaging, precise targeting, and conversion-focused landing pages that actually work.</p>
+
+      <p><strong>No chaos. No guesswork.</strong> Just the right message, to the right people, at the right moment.</p>
+
+      <div class="cta-wrapper">
+        <a href="contact.html?service=paid-ads" class="cta-button">Let's Talk Paid Ads</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Contact us:
+        <a href="mailto:ping@digitful.ca">ping@digitful.ca</a> |
+        <a href="tel:+15797797779">+1 579 779 7779</a>
+      </p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
-  </header>
-  
-  <!-- Additional Paid Ads content can go here -->
-  <section class="paid-ads-info">
-    <h2>You’ve run ads. You’re still not sure what they’re doing.</h2>
-    <ul>
-      <li>Clicks are up. Conversions? Not so much.</li>
-      <li>Your leads are random—or totally unqualified.</li>
-      <li>You’re spending, but afraid to scale.</li>
-    </ul>
-    <p><em>Paid ads shouldn’t feel like gambling.</em></p>
-  
-    <h3>We build ad systems that are clear, trackable, and designed to convert—not just attract attention.</h3>
-  
-    <ul>
-      <li>Messaging that matches what your audience actually wants</li>
-      <li>Smart targeting, so you stop wasting spend</li>
-      <li>Clear results you can trust and scale</li>
-    </ul>
-  
-    <p><strong>No chaos. No guesswork.</strong> Just the right message, to the right people, at the right moment.</p>
-  
-    <div class="cta-wrapper">
-      <a href="contact.html?service=paid-ads" class="cta-button">Let’s Talk Paid Ads</a>
-    </div>
-  </section>  
-  
-  <footer>
-    <p>Contact us: ping@digitful.ca | +1 579 779 7779</p>
   </footer>
-  
+
   <!-- Include the JavaScript files -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="scripts.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script defer src="scripts.js"></script>
 </body>
 </html>

@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Process Automation - Pure Marketing</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Process Automation services by Digitful. Work less, do more." />
+  <link rel="canonical" href="https://digitful.ca/automation.html" />
+  <title>Process Automation - Digitful</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <!-- Google Material Symbols -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -14,56 +16,82 @@
 <body>
   <!-- Particles.js container for background effect -->
   <div id="particles-js"></div>
-  
-  <header class="service-header">
-    <nav class="main-nav">
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a href="index.html" class="small-logo">
-      <img src="images/logo-small.webp" alt="Company Logo" />
-    </a>
-    <div class="overlay-container">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo-small.webp" alt="Digitful Logo" />
+      </a>
+      <nav class="main-nav" role="navigation">
+      </nav>
+
+<button class="hamburger" aria-label="Toggle menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<nav class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="social-media.html">Social Media</a></li>
+    <li><a href="seo.html">SEO</a></li>
+    <li><a href="paid-ads.html">Paid Ads</a></li>
+    <li><a href="automation.html">Automation</a></li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="service-hero">
       <h1>
         <span class="material-symbols-outlined automation-icon large-icon">settings</span>
         Process Automation
       </h1>
       <p>Work Less, Do More.</p>
+    </section>
+
+    <!-- Additional Process Automation content can go here -->
+    <section class="automation-info">
+      <h2>You've got tools—but nothing's talking to each other.</h2>
+
+      <ul>
+        <li>Leads come in—but no one's following up fast enough.</li>
+        <li>Your team is doing repetitive tasks that waste their talent.</li>
+        <li>You're using 10 tools that don't connect to each other.</li>
+      </ul>
+
+      <p><em>We get it. Most workflows are just digital chaos.</em></p>
+
+      <p>We build automation that actually works: seamless connections between your tools, workflows that make sense, and systems that scale with your business.</p>
+
+      <p><strong>Less busywork. More brainpower.</strong> That's how teams grow faster—with less chaos.</p>
+
+      <div class="cta-wrapper">
+        <a href="contact.html?service=automation" class="cta-button">Let's Automate</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Contact us:
+        <a href="mailto:ping@digitful.ca">ping@digitful.ca</a> |
+        <a href="tel:+15797797779">+1 579 779 7779</a>
+      </p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
-  </header>
-  
-  <!-- Additional Process Automation content can go here -->
-  <section class="automation-info">
-    <h2>You’ve got tools—but nothing’s talking to each other.</h2>
-  
-    <ul>
-      <li>Leads come in—but no one’s following up fast enough.</li>
-      <li>Tasks slip through the cracks—or pile up in inboxes.</li>
-      <li>Everyone’s doing repetitive stuff that software could handle.</li>
-    </ul>
-  
-    <p><em>Automation isn’t about replacing people—it’s about freeing them up to do real work.</em></p>
-  
-    <h3>We build simple automations that connect your tools and clean up the mess behind the scenes.</h3>
-  
-    <ul>
-      <li>Lead routing, task creation, and notifications—done automatically</li>
-      <li>No-code and low-code systems built around how you already work</li>
-      <li>Less manual follow-up, fewer dropped balls, more momentum</li>
-    </ul>
-  
-    <p><strong>Less busywork. More brainpower.</strong> That’s how teams grow faster—with less chaos.</p>
-  
-    <div class="cta-wrapper">
-      <a href="contact.html?service=automation" class="cta-button">Let’s Automate</a>
-    </div>
-  </section>  
-  
-  <footer>
-    <p>Contact us: ping@digitful.ca | +1 579 779 7779</p>
   </footer>
-  
+
   <!-- Include the JavaScript files -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="scripts.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script defer src="scripts.js"></script>
 </body>
 </html>

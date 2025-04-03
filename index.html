@@ -3,94 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pure Marketing, Real Growth</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <meta name="description" content="Digitful delivers real growth with innovative digital strategies." />
+  <link rel="canonical" href="https://digitful.ca/index.html" />
+  <title>Digitful - Real Growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
-  <!-- Google Material Symbols -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-  <!-- FontAwesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Particles.js container for background effect -->
   <div id="particles-js"></div>
-  
-  <header class="hero">
-    <nav class="main-nav">
-      <a href="contact.html">Contact</a>
-    </nav>
-    <img src="images/logo-large.webp" alt="Company Logo" class="logo" />
-    <h1>Pure Marketing, Real Growth</h1>
-    <h2 id="typewriter" class="subheadline">You’ve tried the Hacks. Guesswork ends here.</h2>
-    <a href="#services" class="cta-button">See What’s Possible</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo-small.webp" alt="Digitful Logo" />
+      </a>
+      <nav class="main-nav" role="navigation">
+      </nav>
+
+<button class="hamburger" aria-label="Toggle menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<nav class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="social-media.html">Social Media</a></li>
+    <li><a href="seo.html">SEO</a></li>
+    <li><a href="paid-ads.html">Paid Ads</a></li>
+    <li><a href="automation.html">Automation</a></li>
+  </ul>
+</nav>
+    </div>
   </header>
 
-  <section class="about-us">
-    <div class="overlay"></div>
-    <div class="content">
-      <h2>About Us</h2>
-      <p class="about-intro">We don’t outsource growth. We build it with you.</p>
-  
-      <div class="values">
-        <div class="value-item">
-          <h3>Embedded</h3>
-          <p>We work inside your systems — not around them.</p>
-        </div>
-        <div class="value-item">
-          <h3>Direct</h3>
-          <p>We’ll call what’s not working. No ego, no delay.</p>
-        </div>
-        <div class="value-item">
-          <h3>Clear</h3>
-          <p>The work makes its own case. No pitch needed.</p>
-        </div>
-        <div class="value-item">
-          <h3>Operational</h3>
-          <p>We fix the process, not just the performance.</p>
+  <main>
+    <section class="hero">
+      <h1>Pure Marketing, Real Growth</h1>
+      <h2 id="typewriter" class="subheadline">You've tried the Hacks. Guesswork ends here.</h2>
+      <a href="#services" class="cta-button">See What's Possible</a>
+    </section>
+    <section class="about-us">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2>About Us</h2>
+        <p class="about-intro">We don't outsource growth. We build it with you.</p>
+
+        <div class="values">
+          <div class="value-item">
+            <h3>Embedded</h3>
+            <p>We work inside your systems — not around them.</p>
+          </div>
+          <div class="value-item">
+            <h3>Direct</h3>
+            <p>We'll call what's not working. No ego, no delay.</p>
+          </div>
+          <div class="value-item">
+            <h3>Focused</h3>
+            <p>We don't do everything. We do what works.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>  
+    </section>
 
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <a href="social-media.html" class="card">
-        <h3>
-          <span class="material-symbols-outlined social-icon">forum</span>
-          Social Media
-        </h3>
-        <p>Stop posting. Start building.</p>
-      </a>
-      <a href="seo.html" class="card">
-        <h3>
-          <span class="material-symbols-outlined seo-icon">trending_up</span>
-          SEO
-        </h3>
-        <p>Traffic’s not your problem. Relevance is.</p>
-      </a>
-      <a href="paid-ads.html" class="card">
-        <h3>
-          <span class="material-symbols-outlined ads-icon">paid</span>
-          Paid Ads
-        </h3>
-        <p>Reach real buyers, not scroll zombies.</p>
-      </a>
-      <a href="automation.html" class="card">
-        <h3>
-          <span class="material-symbols-outlined automation-icon">settings</span>
-          Process Automation
-        </h3>
-        <p>Automate the drag. Keep your edge.</p>
-      </a>
-    </div>
-  </section>
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <a href="social-media.html" class="card">
+          <h3>
+            <span class="material-symbols-outlined social-icon">share</span>
+            Social Media
+          </h3>
+          <p>Engage, grow, convert. No fluff.</p>
+        </a>
+        <a href="seo.html" class="card">
+          <h3>
+            <span class="material-symbols-outlined seo-icon">trending_up</span>
+            SEO
+          </h3>
+          <p>Get found by people who need you.</p>
+        </a>
+        <a href="paid-ads.html" class="card">
+          <h3>
+            <span class="material-symbols-outlined ads-icon">ads_click</span>
+            Paid Ads
+          </h3>
+          <p>Reach real buyers, not scroll zombies.</p>
+        </a>
+        <a href="automation.html" class="card">
+          <h3>
+            <span class="material-symbols-outlined automation-icon">settings</span>
+            Process Automation
+          </h3>
+          <p>Automate the drag. Keep your edge.</p>
+        </a>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    <div class="footer-content">
-      <p>Contact us: ping@digitful.ca | +1 579 779 7779</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Contact us:
+        <a href="mailto:ping@digitful.ca">ping@digitful.ca</a> |
+        <a href="tel:+15797797779">+1 579 779 7779</a>
+      </p>
       <div class="social-icons">
         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -100,7 +124,7 @@
   </footer>
 
   <!-- Include the JavaScript files -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="scripts.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script defer src="scripts.js"></script>
 </body>
 </html>
