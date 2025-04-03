@@ -1,0 +1,19 @@
+# OS system files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Local environment/config files (if used later)
+.env
+.env.*
+
+# Formsubmit logs (if ever downloaded)
+formsubmit-log.txt
+
+# Cache or temp files
+*.log
+*.tmp
+.cache/
