@@ -248,8 +248,7 @@ main {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-  position: relative;
-  background-color: var(--secondary-dark);
+  position: relative
 }
 
 .about-us .overlay {
