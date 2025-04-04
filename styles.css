@@ -427,6 +427,7 @@ main {
   text-align: center;
 }
 
+/* Original CTA button styles (kept for backward compatibility) */
 .cta-button {
   display: inline-block;
   background-color: var(--primary-cyan);
@@ -448,6 +449,50 @@ main {
   outline: 2px solid var(--primary-cyan);
   outline-offset: 2px;
   color: #fff;
+}
+
+/* New modular button system */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn-cta {
+  background-color: var(--primary-cyan);
+  color: #fff;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  background-color: var(--cta-hover);
+  transform: scale(1.05);
+  outline: 2px solid var(--primary-cyan);
+  outline-offset: 2px;
+  color: #fff;
+}
+
+/* Button layout variations */
+.btn-block {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-fit-width {
+  width: fit-content;
 }
 
 /* ======================================
@@ -852,7 +897,24 @@ img {
     font-size: 1rem;
   }
 
-  /* Submit Button Style for Tap */
+  /* Button styles for mobile */
+  .btn {
+    padding: 12px 24px; /* Adjusted padding for better touch targets */
+  }
+
+  /* Make buttons full-width by default on mobile */
+  .btn-cta {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Exception for hero buttons */
+  .hero .btn-cta {
+    width: fit-content;
+  }
+
+  /* Submit Button Style for Tap (backward compatibility) */
   .form-submit-button,
   .cta-button {
     font-size: 1rem;
@@ -862,7 +924,7 @@ img {
     margin: 0 auto; /* Center the button within its container */
   }
 
-  /* Center CTA Button Below Text */
+  /* Center CTA Button Below Text (backward compatibility) */
   .hero .cta-button {
     display: block;
     margin: 0 auto;
