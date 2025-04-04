@@ -427,7 +427,10 @@ main {
   text-align: center;
 }
 
-/* Original CTA button styles (kept for backward compatibility) */
+/* DEPRECATED: Original CTA button styles (kept for backward compatibility)
+   This class is deprecated and will be removed in a future update.
+   Please use the new modular button system (.btn, .btn-cta, etc.) instead.
+*/
 .cta-button {
   display: inline-block;
   background-color: var(--primary-cyan);
@@ -914,7 +917,7 @@ img {
     width: fit-content;
   }
 
-  /* Submit Button Style for Tap (backward compatibility) */
+  /* DEPRECATED: Submit Button Style for Tap (backward compatibility) */
   .form-submit-button,
   .cta-button {
     font-size: 1rem;
@@ -924,7 +927,7 @@ img {
     margin: 0 auto; /* Center the button within its container */
   }
 
-  /* Center CTA Button Below Text (backward compatibility) */
+  /* DEPRECATED: Center CTA Button Below Text (backward compatibility) */
   .hero .cta-button {
     display: block;
     margin: 0 auto;
