@@ -31,26 +31,7 @@
   <span></span>
 </button>
 
-<nav class="mobile-nav" id="mobileNav">
-  <ul class="nav-group">
-    <li><a href="index.html">Home</a></li>
-  </ul>
-
-  <hr class="nav-separator" />
-
-  <ul class="nav-group">
-    <li><a href="social-media.html">Social Media</a></li>
-    <li><a href="seo.html">SEO</a></li>
-    <li><a href="paid-ads.html">Paid Ads</a></li>
-    <li><a href="automation.html">Automation</a></li>
-  </ul>
-
-  <hr class="nav-separator" />
-
-  <ul class="nav-group">
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</nav>
+<div id="mobile-nav-container"></div>
     </div>
   </header>
 
@@ -102,5 +83,15 @@
   <!-- Include the JavaScript files -->
   <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script defer src="scripts.js"></script>
+
+  <!-- Mobile Nav Inject -->
+  <div id="mobile-nav-container"></div>
+  <script>
+    fetch('mobile-nav.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('mobile-nav-container').innerHTML = html;
+      });
+  </script>
 </body>
 </html>
