@@ -140,26 +140,32 @@ main {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Slide-in Nav Panel */
+/* Hamburger Menu Panel */
 .mobile-nav {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
-  height: 100%;
-  width: 80%;
-  background-color: var(--background-color, #1a1d2e);
+  height: 100vh;
+  width: 300px; /* NEW: reduced width for desktop */
+  background-color: rgba(26, 29, 46, 0.8); /* keeps color with opacity */
+  backdrop-filter: blur(10px); /* NEW: adds blur effect */
   padding: 4rem 2rem;
   z-index: 1000;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   transform: translateX(100%);
-}
-
-.mobile-nav.active {
   display: block;
-  transform: translateX(0);
+  pointer-events: none;
+  opacity: 0;
 }
 
+/* Active state (visible) */
+.mobile-nav.active {
+  transform: translateX(0);
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Navigation List */
 .mobile-nav ul {
   list-style: none;
   padding: 0;
@@ -752,6 +758,10 @@ img {
 /* Medium screens (tablets, small laptops) */
 @media (max-width: 600px) {
   /* Adjust mobile nav */
+  .mobile-nav {
+    width: 80%;
+  }  
+  
   .mobile-nav a {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
