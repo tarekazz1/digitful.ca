@@ -59,6 +59,24 @@ function initToggleButtons() {
       targetButton.setAttribute('aria-pressed', 'true');
     }
   }
+  
+  // Add form submission handler to collect toggle button values
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      // Get all selected help_with buttons
+      const helpWithButtons = document.querySelectorAll('fieldset:first-of-type .toggle-btn.selected');
+      const helpWithValues = Array.from(helpWithButtons).map(btn => btn.dataset.value).join(', ');
+      
+      // Get all selected goals buttons
+      const goalsButtons = document.querySelectorAll('fieldset:nth-of-type(2) .toggle-btn.selected');
+      const goalsValues = Array.from(goalsButtons).map(btn => btn.dataset.value).join(', ');
+      
+      // Set the hidden input values
+      document.getElementById('help_with').value = helpWithValues;
+      document.getElementById('goals').value = goalsValues;
+    });
+  }
 }
 
 /**
@@ -167,3 +185,4 @@ if (hamburger && mobileNav) {
     }
   });
 }
+
