@@ -40,11 +40,6 @@ function initToggleButtons() {
       const isPressed = this.classList.toggle('selected');
       // Update aria-pressed attribute for accessibility
       this.setAttribute('aria-pressed', isPressed);
-      // Force repaint by briefly toggling the animation
-      this.style.animation = 'none';
-      requestAnimationFrame(() => {
-        this.style.animation = '';
-      });
       this.blur(); // optional, removes lingering focus state
     });
   });
@@ -185,4 +180,5 @@ if (hamburger && mobileNav) {
     }
   });
 }
+
 
